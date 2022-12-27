@@ -131,7 +131,7 @@ console.log("The client secert is >>>> ", clientSecret);
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"usd"}
+                                        prefix={"inr"}
                                     />
                                      <button disabled={processing || disabled || succeeded}>
                                         <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
