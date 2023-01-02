@@ -119,6 +119,8 @@ console.log("The client secert is >>>> ", clientSecret);
                         <h3>Payment Method</h3>
                     </div>
                     <div className='payment__details'>
+                        <h4>Card Details:</h4>
+
                         {/*Stripe magic goes */}
                         <form onSubmit={handleSubmit}>
                             <CardElement onChange={handleChange}/>
@@ -131,7 +133,7 @@ console.log("The client secert is >>>> ", clientSecret);
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"inr"}
+                                        prefix={"INR"}
                                     />
                                      <button disabled={processing || disabled || succeeded}>
                                         <span>{processing ? <p>Processing</p> : "Buy Now"}</span>

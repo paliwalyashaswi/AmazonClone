@@ -12,7 +12,8 @@ function Orders() {
     useEffect(()=>{
 
         if(user){
-            db.collection('users')
+            db
+            .collection('users')
             .doc(user?.uid)
             .collection('orders')
             .orderBy('created', 'desc')
